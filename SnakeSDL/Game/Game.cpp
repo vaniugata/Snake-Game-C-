@@ -7,7 +7,7 @@ Game::Game(int Window_width, int Window_height)
 : width(Window_width)
 , height(Window_height)
 , snake(width / 2, height / 2)
-, fruit(rand() % 100, rand() % 100)
+, fruit(fruit_randpos(), fruit_randpos())
 , wallsize(10)
 {	
 	srand(time(NULL));
